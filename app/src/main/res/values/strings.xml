@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">CalculatorAppBellinder</string>
+    <string name="class_label">Number 1</string>
+    <string name="class_label2">Number 2</string>
 </resources>

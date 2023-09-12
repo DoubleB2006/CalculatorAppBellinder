@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="psize">50dp</dimen>
+    <dimen name = "textWidth">172dp</dimen>
+    <dimen name = "textHeight">54dp</dimen>
+</resources>
