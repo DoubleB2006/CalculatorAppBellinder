@@ -1,5 +1,5 @@
 <resources>
     <string name="app_name">CalculatorAppBellinder</string>
-    <string name="class_label">Number 1</string>
-    <string name="class_label2">Number 2</string>
+    <string name="class_label">Num 1 or a</string>
+    <string name="class_label2">Num 2 or b</string>
 </resources>

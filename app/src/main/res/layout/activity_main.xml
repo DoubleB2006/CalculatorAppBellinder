@@ -24,12 +24,12 @@
         android:id="@+id/Subtractbutton"
         android:layout_width="83dp"
         android:layout_height="77dp"
-        android:layout_marginStart="112dp"
+        android:layout_marginStart="12dp"
         android:onClick="subNums"
         android:text="-"
         android:textSize="@dimen/psize"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/Addbutton"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.425" />
 
@@ -37,12 +37,12 @@
         android:id="@+id/Multiplibutton"
         android:layout_width="83dp"
         android:layout_height="77dp"
-        android:layout_marginEnd="100dp"
+        android:layout_marginEnd="8dp"
         android:onClick="multiplyNums"
         android:text="X"
         android:textSize="@dimen/psize"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/Divisionbutton"
+        app:layout_constraintEnd_toStartOf="@+id/Divisionbutton"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.425" />
 
@@ -50,7 +50,7 @@
         android:id="@+id/Divisionbutton"
         android:layout_width="83dp"
         android:layout_height="77dp"
-        android:layout_marginEnd="16dp"
+        android:layout_marginEnd="24dp"
         android:onClick="divideNums"
         android:text="/"
         android:textSize="@dimen/psize"
@@ -82,7 +82,7 @@
         android:inputType="text"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.887"
+        app:layout_constraintHorizontal_bias="0.853"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.078" />
@@ -106,23 +106,36 @@
         android:layout_height="77dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="26dp"
-        android:text="1^2"
+        android:onClick="squareFirstNum"
+        android:text="a^2"
         android:textSize="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/Addbutton"
-        app:layout_constraintVertical_bias="0.003" />
+        app:layout_constraintVertical_bias="0.01" />
 
     <Button
         android:id="@+id/button2"
         android:layout_width="83dp"
         android:layout_height="77dp"
-        android:layout_marginStart="20dp"
+        android:layout_marginStart="12dp"
+        android:onClick="squareSecondNum"
+        android:text="b^2"
         android:textSize="20dp"
-        android:text="2^2"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toEndOf="@+id/button"
         app:layout_constraintTop_toBottomOf="@+id/Subtractbutton"
-        app:layout_constraintVertical_bias="0.09" />
+        app:layout_constraintVertical_bias="0.096" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="83dp"
+        android:layout_height="77dp"
+        android:textSize = "@dimen/psize"
+        android:text="AC"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Multiplibutton"
+        app:layout_constraintVertical_bias="0.096"
+        tools:layout_editor_absoluteX="213dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
