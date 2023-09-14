@@ -97,19 +97,19 @@ public class MainActivity extends AppCompatActivity {
 
     }
     public void clearNums(View v){
+
         EditText n1 = findViewById(R.id.Number1);
         EditText n2 = findViewById(R.id.Number2);
         EditText n3 = findViewById(R.id.Number3);
+        if((n1 != null ) && (n2 != null) && (n3 != null)) {
+            int num1 = Integer.parseInt(n1.getText().toString());
+            int num2 = Integer.parseInt(n2.getText().toString());
+            int num3 = 1;
 
-        int num1 = Integer.parseInt(n1.getText().toString());
-        int num2 = Integer.parseInt(n2.getText().toString());
-        int num3 = num1 / num2;
-
-        n1.setText(" ");
-        n2.setText("");
-        n3.setText("");
-        n3.setText(" " + num3);
-
+            n1.setText("");
+            n2.setText("");
+            n3.setText("");
+        }
 
     }
 }
